@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Элегант</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    
+                    <a href="cart.html" class="cart-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V17C17 18.1 16.1 19 15 19H9C7.9 19 7 18.1 7 17V13H17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Главная</a>
+                    <span>/</span>
+                    <span>Каталог</span>
+                </div>
+                <h1>Каталог товаров</h1>
+                <p>Откройте для себя мир изысканной красоты и стиля</p>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container container-catalog">
+
+                <div class="catalog-sidebar">
+                    <div class="filter-section">
+                        <h3>Категории</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="filter-link active">Все товары</a></li>
+                            <li><a href="#" class="filter-link">Парфюмерия</a></li>
+                            <li><a href="#" class="filter-link">Уход за лицом</a></li>
+                            <li><a href="#" class="filter-link">Декоративная косметика</a></li>
+                            <li><a href="#" class="filter-link">Уход за телом</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-section">
+                        <h3>Цена</h3>
+                        <div class="price-range">
+                            <label>
+                                <input type="range" min="500" max="10000" value="5000">
+                                <span>до 5000 ₽</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <h3>Бренды</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Luxury Brand
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Beauty Care
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Color Pro
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Perfect Skin
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="catalog-content">
+                    <div class="catalog-header">
+                        <div class="results-info">
+                            <span>Найдено товаров: 24</span>
+                        </div>
+                        <div class="sort-options">
+                            <select class="sort-select">
+                                <option>По популярности</option>
+                                <option>По цене (возрастанию)</option>
+                                <option>По цене (убыванию)</option>
+                                <option>По новизне</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/product.jpg" alt="Духи">
+                            </div>
+                            <div class="product-info">
+                                <h3>Eau de Parfum Rose</h3>
+                                <p class="product-brand">Luxury Brand</p>
+                                <p class="product-price">4 500 ₽</p>
+                                <a href="product.html" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/product.jpg" alt="Духи">
+                            </div>
+                            <div class="product-info">
+                                <h3>Увлажняющий крем</h3>
+                                <p class="product-brand">Beauty Care</p>
+                                <p class="product-price">2 800 ₽</p>
+                                <a href="product.html" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/product.jpg" alt="Духи">
+                            </div>
+                            <div class="product-info">
+                                <h3>Матовая помада</h3>
+                                <p class="product-brand">Color Pro</p>
+                                <p class="product-price">1 200 ₽</p>
+                                <a href="product.html" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/product.jpg" alt="Духи">
+                            </div>
+                            <div class="product-info">
+                                <h3>Тональный крем</h3>
+                                <p class="product-brand">Perfect Skin</p>
+                                <p class="product-price">3 200 ₽</p>
+                                <a href="product.html" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/product.jpg" alt="Духи">
+                            </div>
+                            <div class="product-info">
+                                <h3>Eau de Toilette Fresh</h3>
+                                <p class="product-brand">Luxury Brand</p>
+                                <p class="product-price">3 800 ₽</p>
+                                <a href="product.html" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="img/product.jpg" alt="Духи">
+                            </div>
+                            <div class="product-info">
+                                <h3>Омолаживающая сыворотка</h3>
+                                <p class="product-brand">Beauty Care</p>
+                                <p class="product-price">4 200 ₽</p>
+                                <a href="product.html" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="pagination">
+                        <a href="#" class="pagination-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="pagination-link active">1</a>
+                        <a href="#" class="pagination-link">2</a>
+                        <a href="#" class="pagination-link">3</a>
+                        <a href="#" class="pagination-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <h3>Элегант</h3>
+                        <p>Духи & Косметика</p>
+                    </div>
+                    <p>Премиальная парфюмерия и косметика для создания неповторимого образа</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="catalog.html">Парфюмерия</a></li>
+                        <li><a href="catalog.html">Уход за лицом</a></li>
+                        <li><a href="catalog.html">Декоративная косметика</a></li>
+                        <li><a href="catalog.html">Уход за телом</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6Z" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            info@elegant-store.ru
+                        </p>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 16.92V19.92C22 20.52 21.39 21 20.72 21C9.28 21 0 11.72 0 0.28C0 -0.39 0.48 -1 1.08 -1H4.08C4.68 -1 5.08 -0.52 5.08 0.08C5.08 2.28 5.45 4.4 6.12 6.38C6.22 6.68 6.12 7.02 5.88 7.22L4.12 8.38C5.57 11.92 8.08 14.43 11.62 15.88L12.78 14.12C12.98 13.88 13.32 13.78 13.62 13.88C15.6 14.55 17.72 14.92 19.92 14.92C20.52 14.92 21 15.32 21 15.92V18.92" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            +7 (495) 123-45-67
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Элегант. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
