@@ -293,7 +293,9 @@ a:hover {
     margin-bottom: var(--spacing-xl);
     font-size: var(--font-size-lg);
 }
-
+.form-row.form-row-second {
+    grid-template-columns: 1fr;
+}
 .hero-image img {
     width: 100%;
     height: 400px;
@@ -304,6 +306,9 @@ a:hover {
 }
 .cart-btn img {
     width: 25px;
+}
+.intro-content h2 {
+    padding-top: 60px;
 }
 /* Секции */
 .section-title {
@@ -1657,7 +1662,7 @@ text-align: center;
 }
 
 .social-link:hover {
-    background: var(--color-rose);
+    background: var(--color-secondary);
     color: var(--color-white);
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
@@ -1673,7 +1678,9 @@ text-align: center;
     text-align: center;
     margin-bottom: var(--spacing-xl);
 }
-
+.social-link img {
+    width: 28px;
+}
 .map-placeholder {
     height: 400px;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
