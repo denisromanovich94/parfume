@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в личный кабинет</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="account.html" class="active">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-btn">
+                        <img src="img/cart-shopping-svgrepo-com.svg" alt="">
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Главная</a>
+                    <span>/</span>
+                    <span>Вход</span>
+                </div>
+                <h1>Вход в личный кабинет</h1>
+                <p>Войдите в свой аккаунт или создайте новый</p>
+            </div>
+        </section>
+
+        <section class="account-section">
+            <div class="container">
+                <div class="registration-layout">
+                    <div class="form-content">
+                        <h2>Авторизация</h2>
+                        <p>Введите данные для входа в личный кабинет</p>
+                        
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Пароль *</label>
+                                <input type="password" id="password" name="password" required placeholder="Введите пароль">
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary btn-large">Войти</button>
+                        </form>
+
+                        
+                        
+                    </div>
+
+                    <div class="info-sidebar">
+                        
+
+                        <div class="info-card contact-manager">
+                            <h3>Служба поддержки</h3>
+                            <div class="manager-info">
+                                <div class="manager-details">
+                                    <h4>Нужна помощь?</h4>
+                                    <p class="manager-position">Наши консультанты готовы помочь</p>
+                                    <div class="manager-contacts">
+                                        <p>
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                <path d="M22 16.92V19.92C22 20.52 21.39 21 20.72 21C9.28 21 0 11.72 0 0.28C0 -0.39 0.48 -1 1.08 -1H4.08C4.68 -1 5.08 -0.52 5.08 0.08C5.08 2.28 5.45 4.4 6.12 6.38C6.22 6.68 6.12 7.02 5.88 7.22L4.12 8.38C5.57 11.92 8.08 14.43 11.62 15.88L12.78 14.12C12.98 13.88 13.32 13.78 13.62 13.88C15.6 14.55 17.72 14.92 19.92 14.92C20.52 14.92 21 15.32 21 15.92V18.92" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                            +7 (495) 123-45-67
+                                        </p>
+                                        <p>
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6Z" stroke="currentColor" stroke-width="2"/>
+                                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                            support@elegant-store.ru
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="text-center">
+                            <h3>Нет аккаунта?</h3>
+                            <p>Зарегистрируйтесь и получите доступ к персональным скидкам и специальным предложениям</p>
+                            <a href="account.html" class="btn btn-outline">Создать аккаунт</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="">
+                        <p>Духи & Косметика</p>
+                    </div>
+                    <p>Премиальная парфюмерия и косметика для создания неповторимого образа</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="catalog.html">Парфюмерия</a></li>
+                        <li><a href="catalog.html">Уход за лицом</a></li>
+                        <li><a href="catalog.html">Декоративная косметика</a></li>
+                        <li><a href="catalog.html">Уход за телом</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6Z" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            info@elegant-store.ru
+                        </p>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 16.92V19.92C22 20.52 21.39 21 20.72 21C9.28 21 0 11.72 0 0.28C0 -0.39 0.48 -1 1.08 -1H4.08C4.68 -1 5.08 -0.52 5.08 0.08C5.08 2.28 5.45 4.4 6.12 6.38C6.22 6.68 6.12 7.02 5.88 7.22L4.12 8.38C5.57 11.92 8.08 14.43 11.62 15.88L12.78 14.12C12.98 13.88 13.32 13.78 13.62 13.88C15.6 14.55 17.72 14.92 19.92 14.92C20.52 14.92 21 15.32 21 15.92V18.92" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            +7 (495) 123-45-67
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 L'Onglerie. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
