@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - L'Onglerie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="news.html" class="active">Новости</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="cart.html" class="cart-btn">
+                        <img src="img/cart-shopping-svgrepo-com.svg" alt="">
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Главная</a>
+                    <span>/</span>
+                    <span>Новости</span>
+                </div>
+                <h1>Новости и акции</h1>
+                <p>Будьте в курсе последних событий в мире красоты и наших специальных предложений</p>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <div class="container">
+                <div class="news-filters">
+                    <div class="filters-left">
+                        <h3>Категории новостей:</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-category="all">Все новости</button>
+                            <button class="filter-btn" data-category="products">Новинки</button>
+                            <button class="filter-btn" data-category="sales">Акции</button>
+                            <button class="filter-btn" data-category="events">События</button>
+                            <button class="filter-btn" data-category="tips">Советы</button>
+                        </div>
+                    </div>
+                    <div class="filters-right">
+                        <select class="sort-select">
+                            <option value="date-desc">По дате (новые)</option>
+                            <option value="date-asc">По дате (старые)</option>
+                            <option value="popular">По популярности</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="news-grid">
+                    <article class="news-card featured" data-category="sales">
+                        <div class="news-image">
+                            <img src="img/koncepcia-natural-noi-kosmetiki.jpg" alt="Весенняя распродажа">
+                            <div class="news-badge">Акция</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2024-03-15">15 марта 2024</time>
+                                <span class="news-views">1,234 просмотра</span>
+                            </div>
+                            <h2>Весенняя распродажа: скидки до 50% на парфюмерию</h2>
+                            <p>Встречайте весну с новыми ароматами! В честь наступления весеннего сезона мы подготовили для вас невероятные скидки на всю парфюмерную коллекцию...</p>
+                            <a href="news-detail.html?id=1" class="btn btn-secondary">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-category="products">
+                        <div class="news-image">
+                            <img src="img/hero-bg.jpg" alt="Новая коллекция">
+                            <div class="news-badge">Новинка</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2024-03-12">12 марта 2024</time>
+                                <span class="news-views">856 просмотров</span>
+                            </div>
+                            <h3>Новая коллекция весна-лето 2024</h3>
+                            <p>Представляем вашему вниманию долгожданную коллекцию весна-лето 2024, которая включает в себя самые трендовые оттенки и текстуры сезона...</p>
+                            <a href="news-detail.html?id=2" class="btn btn-secondary">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-category="tips">
+                        <div class="news-image">
+                            <img src="img/product.jpg" alt="Советы по уходу">
+                            <div class="news-badge">Совет</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2024-03-10">10 марта 2024</time>
+                                <span class="news-views">642 просмотра</span>
+                            </div>
+                            <h3>5 секретов идеального весеннего макияжа</h3>
+                            <p>Весенний макияж должен быть свежим, легким и естественным. Наши визажисты поделились профессиональными секретами создания идеального образа...</p>
+                            <a href="news-detail.html?id=3" class="btn btn-secondary">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-category="events">
+                        <div class="news-image">
+                            <img src="img/portret-muzskogo-vraca-3d.jpg" alt="Мастер-класс">
+                            <div class="news-badge">Событие</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2024-03-08">8 марта 2024</time>
+                                <span class="news-views">923 просмотра</span>
+                            </div>
+                            <h3>Мастер-класс по созданию вечернего образа</h3>
+                            <p>20 марта в нашем магазине состоится бесплатный мастер-класс, где профессиональный визажист покажет, как создать роскошный вечерний образ...</p>
+                            <a href="news-detail.html?id=4" class="btn btn-secondary">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-category="products">
+                        <div class="news-image">
+                            <img src="img/product.jpg" alt="Эксклюзивный парфюм">
+                            <div class="news-badge">Новинка</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2024-03-05">5 марта 2024</time>
+                                <span class="news-views">1,567 просмотров</span>
+                            </div>
+                            <h3>Эксклюзивный парфюм от дома моды Valentino</h3>
+                            <p>Мы рады представить эксклюзивный аромат Valentino Born in Roma Donna Acqua, который станет воплощением современной элегантности и стиля...</p>
+                            <a href="news-detail.html?id=5" class="btn btn-secondary">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-category="sales">
+                        <div class="news-image">
+                            <img src="img/product.jpg" alt="Программа лояльности">
+                            <div class="news-badge">Акция</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2024-03-02">2 марта 2024</time>
+                                <span class="news-views">1,890 просмотров</span>
+                            </div>
+                            <h3>Обновленная программа лояльности</h3>
+                            <p>Мы полностью обновили нашу программу лояльности! Теперь вы можете накапливать бонусы еще быстрее и получать больше привилегий...</p>
+                            <a href="news-detail.html?id=6" class="btn btn-secondary">Читать далее</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="pagination-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="pagination-link active">1</a>
+                    <a href="#" class="pagination-link">2</a>
+                    <a href="#" class="pagination-link">3</a>
+                    <a href="#" class="pagination-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="">
+                        <p>Духи & Косметика</p>
+                    </div>
+                    <p>Премиальная парфюмерия и косметика для создания неповторимого образа</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="catalog.html">Парфюмерия</a></li>
+                        <li><a href="catalog.html">Уход за лицом</a></li>
+                        <li><a href="catalog.html">Декоративная косметика</a></li>
+                        <li><a href="catalog.html">Уход за телом</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6Z" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            info@elegant-store.ru
+                        </p>
+                        <p>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 16.92V19.92C22 20.52 21.39 21 20.72 21C9.28 21 0 11.72 0 0.28C0 -0.39 0.48 -1 1.08 -1H4.08C4.68 -1 5.08 -0.52 5.08 0.08C5.08 2.28 5.45 4.4 6.12 6.38C6.22 6.68 6.12 7.02 5.88 7.22L4.12 8.38C5.57 11.92 8.08 14.43 11.62 15.88L12.78 14.12C12.98 13.88 13.32 13.78 13.62 13.88C15.6 14.55 17.72 14.92 19.92 14.92C20.52 14.92 21 15.32 21 15.92V18.92" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            +7 (495) 123-45-67
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 L'Onglerie. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="news.js"></script>
+
+    <style>
+        .news-section {
+            padding: var(--spacing-2xl) 0;
+            background: var(--color-white);
+        }
+
+        .news-filters {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: var(--spacing-2xl);
+            padding: var(--spacing-xl);
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+            border-radius: var(--border-radius-lg);
+        }
+
+        .filters-left h3 {
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: 2px solid var(--color-accent);
+            background: var(--color-white);
+            color: var(--color-text);
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            transition: var(--transition-fast);
+            font-size: var(--font-size-sm);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--color-rose);
+            border-color: var(--color-rose);
+            color: var(--color-white);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .news-card {
+            background: var(--color-white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-medium);
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .news-card.featured {
+            grid-column: span 2;
+        }
+
+        .news-card.featured .news-content {
+            padding: var(--spacing-2xl);
+        }
+
+        .news-card.featured h2 {
+            font-size: var(--font-size-2xl);
+        }
+
+        .news-image {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .news-card.featured .news-image {
+            height: 280px;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-slow);
+        }
+
+        .news-card:hover .news-image img {
+            transform: scale(1.05);
+        }
+
+        .news-badge {
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            background: var(--color-rose);
+            color: var(--color-white);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .news-content {
+            padding: var(--spacing-lg);
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-light);
+        }
+
+        .news-views {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .news-content h2,
+        .news-content h3 {
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text);
+            line-height: 1.4;
+        }
+
+        .news-content p {
+            margin-bottom: var(--spacing-lg);
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+
+        .newsletter-section {
+            padding: var(--spacing-2xl) 0;
+            background: linear-gradient(135deg, var(--color-rose) 0%, var(--color-gold) 100%);
+            color: var(--color-white);
+        }
+
+        .newsletter-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: var(--spacing-2xl);
+            align-items: center;
+        }
+
+        .newsletter-text h2 {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .newsletter-text p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: center;
+        }
+
+        .email-input {
+            padding: var(--spacing-md);
+            border: 2px solid var(--color-white);
+            border-radius: var(--border-radius-md);
+            background: var(--color-white);
+            color: var(--color-text);
+            font-size: var(--font-size-base);
+            min-width: 300px;
+        }
+
+        .email-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+        }
+
+        .newsletter-form .btn {
+            background: var(--color-white);
+            color: var(--color-rose);
+            border-color: var(--color-white);
+            white-space: nowrap;
+        }
+
+        .newsletter-form .btn:hover {
+            background: var(--color-accent);
+            border-color: var(--color-accent);
+            color: var(--color-text);
+        }
+
+        @media (max-width: 1024px) {
+            .news-card.featured {
+                grid-column: span 1;
+            }
+
+            .newsletter-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .news-filters {
+                flex-direction: column;
+                gap: var(--spacing-lg);
+                align-items: stretch;
+            }
+
+            .filter-buttons {
+                justify-content: center;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .email-input {
+                min-width: auto;
+            }
+        }
+    </style>
+</body>
+</html>
